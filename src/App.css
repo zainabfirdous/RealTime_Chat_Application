@@ -1,0 +1,19 @@
+
+.App-header{
+  width: 100%;
+  max-height: 80px;
+  top: 0; 
+  left: 0;
+  box-shadow: 1px 0px 5px gray;
+  background-color: white;
+  position: fixed;
+  padding: 3px;
+  z-index: 1000;
+}
+
+#title{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+

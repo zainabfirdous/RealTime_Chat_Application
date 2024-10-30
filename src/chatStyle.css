@@ -1,0 +1,142 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+#container{
+    max-width: 1000px;
+    margin: 80px auto 50px;
+    padding: 20px;
+    display: flex;
+}
+
+.activeusers {
+  width: 30%; /* Set width for the active users section */
+  margin-right: 20px; /* Space between sections */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: flex-start; /* Align items to the top */
+  height: 500px; /* Arrange items vertically */
+  padding: 15px
+}
+
+.activeusers h2 {
+    margin: 0 0 15px; /* Margin below the heading */
+    font-size: 24px; /* Font size for the heading */
+    color: #333; /* Darker color for text */
+}
+
+#users {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+#users li {
+    padding: 10px 15px; /* Padding inside each list item */
+    margin-bottom: 5px; /* Space between list items */
+    border-radius: 5px; /* Rounded corners for items */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#users li:hover {
+    background-color: #e3f2fd; /* Light blue background on hover */
+}
+
+#users li#list {
+    display: flex; /* Flex layout for user item */
+    justify-content: space-between; /* Space between username and "(You)" text */
+    align-items: center; /* Center items vertically */
+}
+
+#users li.self {
+    font-weight: bold; /* Bold for current user */
+    color: #007bff; /* Blue color for the current user */
+}
+#chatScreen{
+  flex: 1;
+    height: 500px;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    background: #eee;
+    border-radius: 6px;
+    box-shadow: 1px 0px 10px #eee;
+  }
+
+  #messageList {
+    flex: 1;
+    overflow-y: scroll;
+    list-style: none; /* Remove list dots */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.messageBlock {
+    display: inline-block;
+    width: fit-content; /* Let it take the width of its content */
+    max-width: 50%; /* Limit max width to 50% of the parent */
+    padding: 10px; /* Padding inside the message */
+    border-radius: 5px; /* Rounded corners */
+    margin: 5px; /* Space between messages */
+    box-sizing: border-box; /* Include padding in the width */
+    word-wrap: break-word; /* Ensure long words break correctly */
+}
+
+/* Background color for message blocks */
+.self .messageBlock {
+    width:fit-content;
+    background-color: #d1f7d1; /* Light green for self messages */
+}
+
+.other .messageBlock {
+    width:fit-content;
+    background-color: #f1f1f1; /* Light gray for other messages */
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.self {
+    width: 50%;
+    background-color: #d1f7d1; /* Light green for self messages */
+    align-self: flex-end;
+    text-align: right;
+}
+
+.other {
+    width: 50%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #f1f1f1; /* Light gray for other messages */
+    align-self: flex-start; /* Align other messages to the left */
+}
+
+  .input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 0px;
+  }
+  
+  #typeMessage {
+    width: 85%;
+    height: 35px;
+    border: none;
+    font-size: medium;
+  }
+  
+  #send {
+    padding: 4px;
+    margin-left: 8px;
+    width: 10%;
+    height: 35px;
+    background: teal;
+    border-radius: 8px;
+    border:none;
+    font-size: medium;
+    color: white;
+    cursor: pointer;
+  }
